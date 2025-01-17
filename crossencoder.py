@@ -29,7 +29,7 @@ class CrossEncoderRanker:
     def __init__(self, model_path: str):
         self.lock = Lock()
         self.executor = ThreadPoolExecutor()
-        self.model = Reranker(model_path)
+        self.model = Reranker(model_path ,trust_remote_code=True )
 
     def _batch_rerank(self, item: CrossEncoderInput) -> CrossEncoderResponse:
         results = self.model.rank(query=item.query, docs=item.documents)

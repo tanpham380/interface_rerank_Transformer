@@ -65,3 +65,7 @@ LOCAL_REPO="phoranker-local-reranker" ./cicd/test.sh
 
 - [HuggingFace cross-encoder/ms-marco-MiniLM-L-6-v2 model description](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2)
 # interface_rerank_Transformer
+
+<!-- docker run -d -it -p "8001:8080" custom-local-reranker -->
+
+LOCAL_REPO="custom-local-reranker" ./cicd/build_custom_base.sh

@@ -2,4 +2,4 @@
 
 set -eou pipefail
 
-docker build --build-arg "MODEL_NAME=$model_name" -t "$local_repo" -f custom.Dockerfile .
+docker build -t "$LOCAL_REPO" -f custom.Dockerfile .

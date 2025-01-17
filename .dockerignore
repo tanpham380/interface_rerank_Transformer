@@ -6,3 +6,5 @@ cicd
 models
 requirements-test.txt
 smoke_tests.py
+local-base-multilingual
+local-ranker-model

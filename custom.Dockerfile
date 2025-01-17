@@ -1,7 +1,10 @@
-FROM local-reranker
+FROM phoranker-local-reranker
 
 WORKDIR /app
-RUN rm -rf /app/models
+RUN rm -rf /app/models/*
 
-RUN python3 download.py 
+
+COPY ./local-ranker-model/ /app/models/model/
+
+# RUN python3 download.py 
 ENTRYPOINT ["./entrypoint.sh"]

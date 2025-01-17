@@ -130,3 +130,5 @@ dmypy.json
 
 # Ignore models
 models
+
+local-ranker-model
