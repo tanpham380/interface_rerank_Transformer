@@ -1,4 +1,4 @@
-FROM phoranker-local-reranker
+FROM custom-local-reranker
 
 WORKDIR /app
 RUN rm -rf /app/models/*
